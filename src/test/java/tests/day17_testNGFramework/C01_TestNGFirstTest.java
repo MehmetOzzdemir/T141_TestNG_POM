@@ -1,6 +1,5 @@
 package tests.day17_testNGFramework;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -10,11 +9,10 @@ import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import org.testng.asserts.Assertion;
 
 import java.time.Duration;
 
-public class C01_TEstNGFirstTest {
+public class C01_TestNGFirstTest {
 
     //tek test methodu oldugu icin @BeforeTest veya @BeforeMethod kullanabiliriz
 

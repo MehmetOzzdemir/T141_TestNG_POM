@@ -17,17 +17,20 @@ public class Driver {
 
     public static WebDriver driver;
 
-    public static WebDriver getDriver(){
+    public static WebDriver getDriver() {
 
-        driver= new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        driver.manage().window().maximize();
-
+        if (driver == null) {
+            driver = new ChromeDriver();
+            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+            driver.manage().window().maximize();
+        }
         return driver;
+
     }
 
-    public static void quitDriver(){
+    public static void quitDriver() {
         driver.quit();
+        driver = null;
     }
 
 }

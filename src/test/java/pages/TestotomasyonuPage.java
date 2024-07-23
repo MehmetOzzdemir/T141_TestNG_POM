@@ -14,8 +14,8 @@ public class TestotomasyonuPage {
     //Bunun icin constructor'i gorunur hale getirip
     //constructor icinde driver i class a tanimlariz
 
-    public TestotomasyonuPage(){
-        PageFactory.initElements(Driver.getDriver(),this);
+    public TestotomasyonuPage() {
+        PageFactory.initElements(Driver.getDriver(), this);
 
     }
 
@@ -30,4 +30,33 @@ public class TestotomasyonuPage {
 
     @FindBy(className = "prod-img")
     public List<WebElement> resultElementList;
+
+    @FindBy(xpath = "//*[@class=' heading-sm mb-4']")
+    public  WebElement firstProductName;
+
+    @FindBy(xpath = "//button[@class='add-to-cart']")
+    public WebElement addToCartButton;
+
+    @FindBy(xpath = "//*[@class='product-title text-center']")
+    public WebElement shoppingBoxProductName;
+
+    @FindBy(xpath = "(//*[@class='cart-bar'])[2]")
+    public WebElement yourCartButton;
+
+    @FindBy(xpath = "//span[text()='Account']")
+    public WebElement accountLink;
+
+    @FindBy(id = "email")
+    public WebElement loginEmailBox;
+
+    @FindBy(id = "password")
+    public WebElement loginPasswordBox;
+
+    @FindBy(id = "submitlogin")
+    public WebElement loginSigninButton;
+
+    @FindBy(xpath = "//span[text()='Logout']")
+    public WebElement logoutButton;
+
+
 }

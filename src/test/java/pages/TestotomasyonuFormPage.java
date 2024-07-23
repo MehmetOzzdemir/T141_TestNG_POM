@@ -14,5 +14,13 @@ public class TestotomasyonuFormPage {
     @FindBy(xpath = "//*[@id='name']")
     WebElement name;
 
+    @FindBy(xpath = "(//select[@class='form-control'])[1]")
+    public WebElement dayDropdownElement;
+
+    @FindBy(xpath = "(//select[@class='form-control'])[2]")
+    public WebElement monthDropdownElement;
+
+    @FindBy(xpath = "(//select[@class='form-control'])[3]")
+    public WebElement yearDropdownElement;
 
 }

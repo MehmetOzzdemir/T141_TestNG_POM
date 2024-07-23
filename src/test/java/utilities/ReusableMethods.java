@@ -24,7 +24,7 @@ public class ReusableMethods{
         }
     }
 
-    public static List<String> StringListChange(List<WebElement> webElementList) {
+    public static List<String> stringListChange(List<WebElement> webElementList) {
         List<String> istenenStringList = new ArrayList<>();
         for (WebElement eachElement : webElementList) {
             istenenStringList.add(eachElement.getText());

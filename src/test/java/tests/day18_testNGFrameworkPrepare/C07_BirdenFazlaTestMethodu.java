@@ -1,4 +1,4 @@
-package tests.day18_TestNGFrameworkPrepare;
+package tests.day18_testNGFrameworkPrepare;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;

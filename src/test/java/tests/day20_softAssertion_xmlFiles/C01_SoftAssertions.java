@@ -9,7 +9,7 @@ import utilities.ConfigReader;
 import utilities.Driver;
 
 public class C01_SoftAssertions {
-    @Test
+    @Test(groups = "smoke")
     public void searchTest() {
 
          /*

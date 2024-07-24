@@ -14,7 +14,7 @@ import java.util.List;
 
 public class C02_softAssertion {
 
-    @Test
+    @Test(groups = "smoke")
     public void currencyTest(){
 
         //1. “http://zero.webappsecurity.com/” Adresine gidin

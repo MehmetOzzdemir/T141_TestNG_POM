@@ -20,7 +20,7 @@ public class C03_NegativeLoginTest {
     //4- Login butonuna basarak login olmayi deneyin
     //5- Basarili olarak giris yapilamadigini test edin
 
-    @Test
+    @Test(groups = "smoke")
     public void invalidPasswordTest() {
         //1- https://www.testotomasyonu.com/ anasayfasina gidin
         Driver.getDriver().get(ConfigReader.getProperty("toURL"));

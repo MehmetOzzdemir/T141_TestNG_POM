@@ -9,7 +9,7 @@ import utilities.Driver;
 
 public class C01_TestDatasiKullanimi {
 
-    @Test
+    @Test(groups = {"smoke","E2E"})
     public void searchTest() {
 
         //testotomasyonu anasayfaya gidin

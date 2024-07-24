@@ -10,7 +10,7 @@ public class C02_PageClassKullanimi {
 
 
 
-    @Test
+    @Test(groups = {"smoke","E2E","regression"})
     public void test01(){
 
 

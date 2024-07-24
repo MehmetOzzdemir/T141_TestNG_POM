@@ -66,7 +66,7 @@ public class C02_Priority {
         Assert.assertTrue(actualUrl.contains(expectedUrl));
     }
 
-    @Test (priority = 2)
+    @Test (priority = 2,groups = "smoke")
     public void wisequarterTest() {
         driver.get("https://www.wisequarter.com");
 

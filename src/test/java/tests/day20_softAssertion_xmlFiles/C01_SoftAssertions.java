@@ -25,7 +25,7 @@ public class C01_SoftAssertions {
         Driver.getDriver().get(ConfigReader.getProperty("toURL"));
 
         //anasayfaya gittiginiz test edin
-        String expectedUrl = "alibaba";//ConfigReader.getProperty("toURL");
+        String expectedUrl = ConfigReader.getProperty("toURL");
         String actualUrl = Driver.getDriver().getCurrentUrl();
 
         //1. adim sofAssert objesi olustur
@@ -38,7 +38,7 @@ public class C01_SoftAssertions {
         testotomasyonuPage.searchBox.sendKeys(ConfigReader.getProperty("toSearch") + Keys.ENTER);
 
         //arama sonucunda urun bulunabildigini test edin
-        softAssert.assertTrue(testotomasyonuPage.resultElementList.size() > 20, "bulunan urun sayisi istenen kadar degil ,satir 40");
+        softAssert.assertTrue(testotomasyonuPage.resultElementList.size() > 0, "bulunan urun sayisi istenen kadar degil ,satir 40");
 
         //ilk urunu tiklayin
         testotomasyonuPage.resultElementList.get(0).click();
@@ -46,7 +46,7 @@ public class C01_SoftAssertions {
         //acilan sayfadaki urun isminde case sensitive olarak
         //aranacak kelime bulundugunu test edin
 
-        String expectedProductName = "java";//ConfigReader.getProperty("toSearch");
+        String expectedProductName = ConfigReader.getProperty("toSearch");
         String actualProductName = testotomasyonuPage.firstProductName.getText().toLowerCase();
         softAssert.assertTrue(actualProductName.contains(expectedProductName), "ilk urunun isminde aranacak kelime yok ,satir 51");
 

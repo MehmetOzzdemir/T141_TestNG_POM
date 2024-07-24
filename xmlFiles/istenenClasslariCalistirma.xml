@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!--
+    GOREV! : day17 den C03
+             day18 den C02 e C04
+             day19 dan C02 e C04
+             classlarini toplu olarak calistirin
+
+-->
+
+<suite name="istenenClasslariCalistirma">
+    <test name="a1 test">
+        
+        <classes>
+            <class name="tests.day17_testNGFramework.C03_DependsOnMethods"></class>
+            <class name="tests.day18_testNGFrameworkPrepare.C02_PageClassKullanimi"></class>
+            <class name="tests.day18_testNGFrameworkPrepare.C04_FormDoldurma"></class>
+            <class name="tests.day19_testNGFramework_assertions.C02_PositiveLoginTest"></class>
+            <class name="tests.day19_testNGFramework_assertions.C04_ShoppingBoxTest"></class>
+            
+        </classes>
+    </test>
+</suite>

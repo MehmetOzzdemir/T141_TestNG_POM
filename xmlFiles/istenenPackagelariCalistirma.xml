@@ -6,8 +6,8 @@
 <suite name="istenenpackagelari calistirma">
     <test name="B1 testi">
         <packages>
-            <package name="tests.day17_testNGFramework"></package>
-            <package name="tests.day18_testNGFrameworkPrepare"></package>
+            <package name="tests.day21_xmlFiles_HTMLReports"></package>
+
         </packages>
 
     </test>

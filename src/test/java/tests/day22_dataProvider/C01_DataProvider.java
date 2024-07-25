@@ -2,6 +2,7 @@ package tests.day22_dataProvider;
 
 import org.openqa.selenium.Keys;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import pages.TestotomasyonuPage;
@@ -48,5 +49,8 @@ public class C01_DataProvider extends TestBaseRapor {
         Assert.assertNotEquals(testotomasyonuPage.searchElement.getText(), "0 Products Found");
         extentTest.pass("arama sonucunda urun bulunabildigini test eder");
 
+    }@AfterClass
+    public void teardown(){
+        Driver.quitDriver();
     }
 }

@@ -46,7 +46,7 @@ public class TestotomasyonuPage {
     @FindBy(xpath = "//span[text()='Account']")
     public WebElement accountLink;
 
-    @FindBy(id = "email")
+    @FindBy(xpath = "//*[@id='email']")
     public WebElement loginEmailBox;
 
     @FindBy(id = "password")

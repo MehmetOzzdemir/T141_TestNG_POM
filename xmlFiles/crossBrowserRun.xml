@@ -31,6 +31,7 @@
         <classes>
             <class name="tests.day22_crossBrowserRunTests.C01_SearchTest"></class>
             <class name="tests.day22_crossBrowserRunTests.C02_PositiveLoginTest"></class>
+            <class name="tests.day22_crossBrowserRunTests.C03_UrunSepetiTesti"></class>
         </classes>
     </test>
 
@@ -40,6 +41,7 @@
         <classes>
             <class name="tests.day22_crossBrowserRunTests.C01_SearchTest"></class>
             <class name="tests.day22_crossBrowserRunTests.C02_PositiveLoginTest"></class>
+            <class name="tests.day22_crossBrowserRunTests.C03_UrunSepetiTesti"></class>
         </classes>
     </test>
 
